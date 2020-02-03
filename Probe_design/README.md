@@ -48,3 +48,17 @@ Once the parameters have been set the script can easily be launched through a ba
 Rscript Probe_design_script.R Path/to/Probe_parameter.txt
 ```
 While in some cases you will not have to provide any additional information for the script to run, if several transcripts are found for the gene of interest you will have to specify which transcript to use.
+
+
+Results of the script  
+-----------------------------------------------
+
+Four different sub-directories are created during probe design :
+1. **Fasta** : contains the nucleotide sequences of the genes studied.
+2. **Subsequences** : contains the sequences of the probes before any filtering.
+3. **Alignment** : contains the SAM file resulting from the alignment of the probes to a reference transcriptome using bowtie2.
+4. **Final_probes** : contains the final results of the analysis. Each analysed gene will produce a .txt file with one row per probe. The sequence of the probe as well as the gene to which it maps are provided.
+
+
+
+
