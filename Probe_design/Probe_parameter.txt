@@ -1,0 +1,10 @@
+Output_directory	Desktop/Trem_2_Colonna
+Transcriptome_index	Desktop/Probe_design_v2/Database/CDS_index/Mouse_CDS
+Species	Mouse
+Gene	Trem2
+Length_probe	35
+Probe_space	4
+Min_GC_percent	40
+Max_GC_percent	70
+Max_probes	25
+Bowtie2_path	/anaconda/bin/bowtie2
