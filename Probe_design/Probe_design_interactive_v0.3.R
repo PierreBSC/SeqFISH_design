@@ -49,8 +49,8 @@ if (Species == "Mouse") {
 
 #To modify : different attribute name for mouse and human gene symbol : hugo ?
 if (Species == "Human") {
-  gene_sequence=getBM(mart = ensembl,attributes = c("coding","mgi_symbol","ensembl_transcript_id"),
-                      filters = "mgi_symbol",values = gene_symbol) 
+  gene_sequence=getBM(mart = ensembl,attributes = c("coding","hgnc_symbol","ensembl_transcript_id"),
+                      filters = "hgnc_symbol",values = gene_symbol) 
 }
 cat("Sequences information successfuly downloaded. \n")
 
