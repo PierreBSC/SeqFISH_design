@@ -8,11 +8,11 @@ Installation of the required softwares, packages and database
 
 This code has been tested on MacOS High Sierra and Ubuntu 18.0.4 but not on Windows. I would therefore recommend running this script on those two platforms  !
  
-The first step is to install the latest version of  [R] (https://www.r-project.org/). Once this is done, two R packages have to be installed : **biomaRt** and **Biostrings**. How to install these two packages is described [there] (https://bioconductor.org/packages/release/bioc/html/biomaRt.html) and [there] (https://www.bioconductor.org/packages/release/bioc/html/Biostrings.html).
+The first step is to install the latest version of  [R](https://www.r-project.org/). Once this is done, two R packages have to be installed : **biomaRt** and **Biostrings**. How to install these two packages is described [there](https://bioconductor.org/packages/release/bioc/html/biomaRt.html) and [there](https://www.bioconductor.org/packages/release/bioc/html/Biostrings.html).
 
-Probe design requires to map the designed probes against the whole specie transcriptome, therefore we will need a short read mapper called [Bowtie2] (http://bowtie-bio.sourceforge.net/bowtie2/). Please follow the instructions on the website for installation.
+Probe design requires to map the designed probes against the whole specie transcriptome, therefore we will need a short read mapper called [Bowtie2](http://bowtie-bio.sourceforge.net/bowtie2/). Please follow the instructions on the website for installation.
 
-Lastly you have to download the fasta files corresponding to the whole CDS sequences of the targeted species on the [ensembl download page] (https://www.ensembl.org/info/data/ftp/index.html). The corresponding fasta file need to be transformed into a **bowtie2 index** before use. This can be done using the following command in Terminal :
+Lastly you have to download the fasta files corresponding to the whole CDS sequences of the targeted species on the [ensembl download page](https://www.ensembl.org/info/data/ftp/index.html). The corresponding fasta file need to be transformed into a **bowtie2 index** before use. This can be done using the following command in Terminal :
 
 ```bash
 bowtie2-build  /Path/to/CDS_file.fasta Index_directory/Index_CDS
