@@ -19,9 +19,9 @@ We will consider that 2 marker genes per cell population/cluster is enough for a
 Walktrougth
 ----------------------------------
 
-The first step is to  annotate a reference scRNA-seq dataset. I would recommend to look at the [Gene Expression Omnibus (GEO)] (https://www.ncbi.nlm.nih.gov/gds) repository platform if you do not have a suited reference dataset. The data can then be analyzed using any scRNA-seq analysis pipeline of your choice like [Seurat] (https://www.ncbi.nlm.nih.gov/gds) or [Pagoda2] (https://github.com/hms-dbmi/pagoda2). 
+The first step is to  annotate a reference scRNA-seq dataset. I would recommend to look at the [Gene Expression Omnibus (GEO)](https://www.ncbi.nlm.nih.gov/gds) repository platform if you do not have a suited reference dataset. The data can then be analyzed using any scRNA-seq analysis pipeline of your choice like [Seurat](https://www.ncbi.nlm.nih.gov/gds) or [Pagoda2](https://github.com/hms-dbmi/pagoda2). 
 
-In this example we will use a recently published dataset by [Li et al.] (https://www.ncbi.nlm.nih.gov/pubmed/30595452) where immune cells from human melanoma were sequenced using the [MARS-seq 2.0 technology] (https://www.nature.com/articles/s41596-019-0164-4).
+In this example we will use a recently published dataset by [Li et al.](https://www.ncbi.nlm.nih.gov/pubmed/30595452) where immune cells from human melanoma were sequenced using the [MARS-seq 2.0 technology](https://www.nature.com/articles/s41596-019-0164-4).
 
 A quick analysis using Pagoda2 reveals that immune infiltrate mostly consists of lymphocytes, including Natural Killer (NK) cells, powerful cytotoxic cells that can eliminate tumor cells. It might be therefore interesting to study them using spatial transcriptomic. In our analysis those cells correspond to cluster 11.
 
